@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Localiza Senac</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="background-image"></div>
+
+  <main class="login-container" role="main">
+    <div class="small-logo">
+      <img src="logologin.png" alt="Logo pequena Localiza Senac" />
+    </div>
+
+    <div class="central-logo" aria-label="Logo Senac">
+      <img src="logosenac.png" alt="Logo Senac" />
+    </div>
+
+    <form action="login.php" method="post" aria-label="Formulário de login">
+      <label for="cpf">CPF</label>
+      <input
+        type="text"
+        id="cpf"
+        name="cpf"
+        placeholder="Digite seu CPF"
+        pattern="\d{11}"
+        title="Digite 11 números do CPF sem pontos ou traços"
+        required
+        autocomplete="off"
+        inputmode="numeric"
+        maxlength="11"
+      />
+
+      <label for="senha">Senha</label>
+      <div class="password-group">
+        <input
+          type="password"
+          id="senha"
+          name="senha"
+          placeholder="Digite sua senha"
+          required
+          autocomplete="current-password"
+        />
+        <div class="extra-links">
+          <a href="#" tabindex="0">Esqueceu a senha?</a>
+        </div>
+      </div>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <div class="signup-link">
+      <span>
+        Não tem uma conta?
+        <a href="telacadastro/index.html">Cadastre-se</a>
+      </span>
+    </div>
+  </main>
+
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+      let cpfInput = document.getElementById("cpf");
+      cpfInput.value = cpfInput.value.replace(/\D/g, ""); 
+      
+    });
+  </script>
+
+</body>
+</html>

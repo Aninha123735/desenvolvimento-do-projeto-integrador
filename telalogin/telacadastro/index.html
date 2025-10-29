@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="background-image"></div>
+
+  <main class="login-container" role="main">
+    <div class="small-logo">
+      <img src="logologin.png" alt="Logo pequena Localiza Senac" />
+    </div>
+
+    <div class="central-logo" aria-label="Logo Senac">
+      <img src="logosenac.png" alt="Logo Senac" />
+    </div>
+
+    <form action="parte.php" method="post" aria-label="Formulário de cadastro">
+      <label for="nome">Nome</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Digite seu nome completo"
+        required
+        autocomplete="name"
+      />
+
+      <label for="cpf">CPF</label>
+      <input
+        type="text"
+        id="cpf"
+        name="cpf"
+        placeholder="Digite seu CPF (somente números)"
+        pattern="\d{11}"
+        title="Digite 11 números do CPF sem pontos ou traços"
+        required
+        autocomplete="off"
+        inputmode="numeric"
+        maxlength="11"
+/>
+
+      <label for="senha">Senha</label>
+      <div class="password-group">
+        <input
+          type="password"
+          id="senha"
+          name="senha"
+          placeholder="Crie uma senha"
+          required
+          autocomplete="new-password"
+        />
+      </div>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <div class="signup-link">
+      <span>
+        Já tem uma conta?
+        <a href="login.html" tabindex="0">Entrar</a>
+      </span>
+    </div>
+  </main>
+
+</body>
+</html>

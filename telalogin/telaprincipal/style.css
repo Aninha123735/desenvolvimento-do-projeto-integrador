@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.5;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: transparent;
+}
+
+
+
+.logo-app {
+  height: 90px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo-app:hover,
+.logo-app:focus {
+  transform: scale(1.05);
+  outline: none;
+}
+
+
+
+.conteudo-principal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+
+.logo-senac {
+  width: 160px;
+  max-width: 90vw;
+  margin-bottom: 50px;
+  user-select: none;
+}
+
+
+.botoes-navegacao {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.botao {
+  background-color: #fff;
+  border: 2.5px solid #000;
+  border-radius: 25px;
+  padding: 18px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  box-shadow: 1px 2px 5px rgb(0 0 0 / 0.1);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+  user-select: none;
+}
+
+.botao:hover,
+.botao:focus {
+  background-color: #044484;
+  color: #fff;
+  box-shadow: 3px 5px 12px rgb(0 0 0 / 0.3);
+  transform: translateY(-3px);
+  outline: none;
+}
+
+
+@media (max-width: 480px) {
+  .cabecalho {
+    padding: 15px 20px;
+  }
+
+  .logo-app {
+    height: 70px;
+  }
+
+  .icone-engrenagem {
+    height: 35px;
+  }
+
+  .logo-senac {
+    width: 120px;
+    margin-bottom: 35px;
+  }
+
+  .botoes-navegacao {
+    max-width: 260px;
+    gap: 18px;
+  }
+
+  .botao {
+    font-size: 1.1rem;
+    padding: 15px 0;
+  }
+}
