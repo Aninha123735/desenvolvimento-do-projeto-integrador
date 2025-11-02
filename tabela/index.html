@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tabela</title>
+</head>
+<body>
+    <h2>Patrimônios</h2>
+    <table>
+        <thead>
+            <tr> 
+                <th>Patrimônio</th>
+                <th>Sala atual</th>
+                <th>Sala de origem</th>
+                <th>Marca</th>
+                <th>Ano</th>
+                <th>Número Patrimônio</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+             </tr>
+        </thead>
+
+        <tbody>
+            <tr> 
+                <td>Computar</td>
+                <td>007</td>
+                <td>002</td>
+                <td>Dell</td>
+                <td>2025</td>
+                <td>123456789</td>
+                <td><button class="editar">Editar</button></td>
+                <td><button class="excluir">Excluir</button></td>
+            </tr>
+            <tr> 
+                <td>Televisão</td>
+                <td>002</td>
+                <td>007</td>
+                <td>Sansung</td>
+                <td>2023</td>
+                <td>987654321</td>
+                <td><button class="editar">Editar</button></td>
+                <td><button class="excluir">Excluir</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <form id="formulário">
+        <label for="campo">Filtrar por: </label>
+        <select id="campo" name="campo">
+            <option value="ano">Ano</option>
+            <option value="marca">Marca</option>
+            <option value="item">Item</option>
+            <option value="número_patrimônio">Patrimônio</option>
+            <option value="sala_atual">Sala</option>
+        </select>    
+     </form> 
+        <div>
+        <button class="retornar">Voltar</button>
+        </div>
+   
+</body>
+</html>
+
+

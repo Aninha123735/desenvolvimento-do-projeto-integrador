@@ -1,0 +1,74 @@
+body{
+    background: #002c69;
+    background: linear-gradient(1deg, rgba(0, 44, 105, 1) 5%, rgba(255, 255, 255, 1) 69%);
+}
+
+.retornar{
+    width: 180px;
+    height: 50px;
+    background-color: white;
+    border-radius: 90px;
+    margin-top: 680px;
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+thead th{
+    background-color: hsla(0, 0%, 100%, 0.582);
+    color: black;
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #0000008f;
+}
+
+button.editar {
+    background-color: hsl(0, 0%, 100%);
+    color: hwb(0 0% 100%);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+button.excluir{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+}
+
+
+#formulário{
+    margin-top: -167px;
+    margin-left: 1350px;
+}
+
+tbody td{
+    border: 2px solid #0000008f;
+    padding: 10px;
+}
+
+button.editar, button.excluir{
+    font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #formulário {
+    margin-left: 0;
+    text-align: center;
+  }
+}
